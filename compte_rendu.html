@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+		<title>Nutritec</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+</head>
+<body>
+<a href="index.html">
+<header></header>
+</a>
+<nav id = "navbar">
+	<p class="menuItem"><a href="index.html#navbar">Accueil</a></p>
+	<p class="menuItem"><a href="produits.html#navbar">Nos Produits</a></p>
+	<p class="menuItem"><a href="panier_empty.html#navbar">Mon panier</a></p>
+	<p class="menuItem"><a href="presentation.html#navbar">Qui sommes-nous ?</a></p>
+	<p class="menuItem"><a href="compte_rendu.html#navbar">Compte rendu</a></p>
+	<form class="menuItem" action ="resultats.html#navbar" method="GET">
+		<input name ="recherche" type="search" placeholder="Rechercher"/>
+		<input name="chercher" type ="submit" value="OK"/>
+	</form>
+</nav>
+<main>
+	<h1>Compte rendu</h1>
+	<section id="cr"><h2>Le projet</h2>
+	<p> Ce site web a été réalisé dans le cadre d'un projet en DUT info. Le but était de réaliser un site internet de shopping en utilisant uniquement du HTML et CSS</p>
+	<p>Les contraintes ont été les suivantes:</p>
+	<ul>
+		<li>une page d'accueil avec message du jour, promotions et fonction de recherche,</li>
+		<li>une page de résultat de recherche avec une liste de produits,</li>
+		<li>une page de description détaillée pour un produit sélectionné dans la liste,</li>
+		<li>des éléments de gestion du panier : possibilité d'ajouter un article, voir le contenu du panier, retirer un article du panier,effectuer l'achat,
+		<li>une page "qui sommes-nous ?" de présentation du site, avec le nom des auteurs,</li>
+		<li>une page "détails techniques" avec une description des méthodes employées (Compte-Rendu).</li>
+	   </ul>
+	<p>J'ai utilisé la plateforme GitHub et j'ai codé avec Atom sur mon macbook pro.</p>
+	<h2>La réalisation</h2>
+	<h3>Architecture: HTML</h3>
+	<p>Après avoir choisi le sujet, la première étape a été de déterminer l'architecture du site. J'ai tout d'abord réaliser sur papier l'ordre des pages et les liens entre elles.<br>
+	Après avoir terminé le squelette du site, j'ai tout d'abord fait la page du panier vide et la page du panier plein. En effet, ne pouvant utiliser seulement du html et du css, il était obligatoire de créer des pages pour avoir un panier soit vide soit plein. Elles contiennent toutes deux un formulaire et des tableaux.<br>
+	J'ai ensuite créé la fonction recherche et la page de résultat correspondante.La recherche est fictive. Elle marche pour tous les mots que l'on entre mais pour que cela soit cohérent avec la page du panier, seulement un article peut être ajouté au panier.<br>
+	La page de résultats et la page des produits contiennent des photos et les descriptions des produits. J'ai choisi de coder seulement une page descriptive et afin de rendre le site encore plus proche d'un vrai site marchant j'ai décidé de mettre des spécifications concernant la disponibilité. De ce fait pour les produits indisponibles il n'y a pas de pages pour la description et donc le bouton en savoir plus est inutilisable.<br>
+  La page de description détaillée sur les BCAA est simplifiée, elle contient seulement une photo ainsi qu'une description plus détaillée du produit.<br>
+	La page d'accueil contient une promotion et une mini description du site (message). Cette page est accessible en cliquant sur l'image du header.<br>
+	Les pages de Qui sommes nous et du compte rendu sont simples. Elles contiennent seulement du texte mis en forme.<br>
+	Toutes les pages sont faites sur le meme modèle : un header avec une image, une barre de navigation, un main divisé en section et un footer avec une image.</p>
+	<h3>Apparence: CSS</h3>
+	<p>Le CSS a permis la mise en forme et le style du site. Une photo a été mise pour le header et le footer afin que le site soit plus attractif et joli. J'ai aussi fait le choix d'utiliser une police venant de Google Font afin que le style du site soit plus original.<br>
+	La barre de navigation et les contenus ont aussi été fait grâce au CSS. Je me suis servi des propriétés de types Flex .<br>
+	Les classes et ID ont permis de mettre en forme les produits mais aussi des détails tels que l'indisponibilité.<br>
+	C'est le CSS qui assure le responsive design du site.</p>
+</section>
+</main>
+<footer>
+</footer>
+</body>
+</html>
